@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Orelega+One&family=Raleway:wght@300&family=Roboto:wght@100&display=swap");
+#h1 #infoNovelas {
+  margin-top: 10px; }
+
+#h1 {
+  padding: 10px;
+  text-align: center;
+  border: black;
+  color: white;
+  background-color: black;
+  border-style: inset;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 10px; }
+
+.footer {
+  font-size: 15px;
+  background-color: black;
+  color: white;
+  font-family: 'Roboto' , sans-serif; }
+  .footer .contactos {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif; }
+
+#manga {
+  padding: 50px;
+  background-image: url("https://c.wallhere.com/photos/99/cb/manga_anime-1879243.jpg!d");
+  color: red;
+  font-family: 'Roboto' , sans-serif;
+  text-align: center;
+  backdrop-filter: blur(3px); }
+
+#danmei {
+  padding: 50px;
+  text-align: center;
+  color: black;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #danmei #danmeiInfo {
+    padding: 40px;
+    color: white; }
+    #danmei #danmeiInfo #infoNovelas {
+      padding: 100px;
+      border-style: dotted;
+      border-color: black;
+      margin-top: 10px; }
+      #danmei #danmeiInfo #infoNovelas #novelas {
+        text-decoration: underline; }
+
+#gradiente {
+  background-color: #f39f86;
+  background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%); }
+
+#gradienteRomance {
+  background-color: #f6f0c4;
+  background-image: linear-gradient(315deg, #f6f0c4 0%, #d99ec9 74%); }
+
+#gradienteFantasia {
+  background-color: red;
+  background-image: linear-gradient(300deg, #f5eded, #d72323, #3e3636, #000000); }
+
+#gradienteManga {
+  background-color: #e9bcb7;
+  background-image: linear-gradient(315deg, #e9bcb7 0%, #29524a 74%); }
+
+#gradienteNosotros {
+  background-color: #21d190;
+  background-image: linear-gradient(315deg, #21d190 0%, #d65bca 74%); }
+
+.danmeiB {
+  background-image: url("https://pm1.narvii.com/7671/e673a912a1f59110cb3a465773aedfb153d1c904r1-1928-1099v2_hq.jpg"); }
+
+#nosotros2 {
+  background-color: #f9c5d1;
+  background-image: linear-gradient(315deg, #f9c5d1 0%, #9795ef 74%); }
+
+#danmei {
+  background-image: url("https://pillowfortmedia.s3.amazonaws.com/posts/9d846766b7cc_04.gif"); }
+
+.cardDisplay {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+  margin-left: 5px; }
+
+#mangaDisplay {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-right: 15px;
+  border-radius: 8px;
+  margin-left: 10px; }
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 0.4s ease-out; }
+
+.wrapper__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%; }
+
+.social-link--linkedin {
+  color: #2d76b0; }
+
+.social-link--github {
+  color: #000; }
+
+.social-link--instagram {
+  color: #9a2970; }
+
+.social-link .social-svg {
+  width: 4.8rem;
+  height: 4.8rem; }
+  .social-link .social-svg .social-group__icon {
+    fill: #191308;
+    transition: all 0.2s; }
+  .social-link .social-svg .social-group__inner-circle {
+    fill: transparent;
+    transition: all 0.2s; }
+  .social-link .social-svg .social-group__outline {
+    stroke: #191308;
+    transform-origin: 50% 50%;
+    transition: all 0.2s; }
+
+.social-link .social-svg:hover .social-group__icon, .social-link .social-svg:active .social-group__icon, .social-link .social-svg:focus .social-group__icon {
+  fill: #fffbfa;
+  transition: all 0.45s; }
+
+.social-link .social-svg:hover .social-group__inner-circle, .social-link .social-svg:active .social-group__inner-circle, .social-link .social-svg:focus .social-group__inner-circle {
+  fill: currentColor;
+  transition: all 0.45s; }
+
+.social-link .social-svg:hover .social-group__inner-circle--instagram, .social-link .social-svg:active .social-group__inner-circle--instagram, .social-link .social-svg:focus .social-group__inner-circle--instagram {
+  fill: url(#simpleInsta) !important; }
+
+.social-link .social-svg:hover .social-group__outline, .social-link .social-svg:active .social-group__outline, .social-link .social-svg:focus .social-group__outline {
+  stroke: currentColor;
+  transform: scale(1.1);
+  transition: all 0.45s; }
+
+.ia-container {
+  width: 685px;
+  margin: 20px auto;
+  overflow: hidden;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08);
+  border: 7px solid rgba(255, 255, 255, 0.6); }
+  .ia-container figure {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    /* width of visible piece */
+    width: 335px;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.6);
+    transition: all 0.3s ease-in-out; }
+  .ia-container > figure {
+    position: relative;
+    left: 0 !important; }
+  .ia-container img {
+    display: block;
+    width: 100%; }
+  .ia-container input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    opacity: 0;
+    z-index: 100;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
+    .ia-container input:checked {
+      width: 5px;
+      left: auto;
+      right: 0px; }
+      .ia-container input:checked ~ figure {
+        left: 335px;
+        transition: all 0.7s ease-in-out; }
+  .ia-container figcaption {
+    width: 100%;
+    height: 100%;
+    background: rgba(87, 73, 81, 0.1);
+    position: absolute;
+    top: 0px;
+    transition: all 0.2s linear; }
+    .ia-container figcaption span {
+      position: absolute;
+      top: 40%;
+      margin-top: -30px;
+      right: 20px;
+      left: 20px;
+      overflow: hidden;
+      text-align: center;
+      background: rgba(87, 73, 81, 0.3);
+      line-height: 20px;
+      font-size: 18px;
+      opacity: 0;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-weight: 700;
+      padding: 20px;
+      color: #fff;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); }
+  .ia-container input:checked + figcaption, .ia-container input:checked:hover + figcaption {
+    background: rgba(87, 73, 81, 0); }
+  .ia-container input:checked + figcaption span {
+    transition: all 0.4s ease-in-out 0.5s;
+    opacity: 1;
+    top: 50%; }
+  .ia-container #ia-selector-last:checked + figcaption span {
+    transition-delay: 0.3s; }
+  .ia-container input:hover + figcaption {
+    background: rgba(87, 73, 81, 0.03); }
+  .ia-container input:checked ~ figure input {
+    z-index: 1; }
+
+@media screen and (max-width: 720px) {
+  .ia-container {
+    width: 540px; }
+    .ia-container figure {
+      left: 40px;
+      width: 260px; }
+    .ia-container input {
+      width: 40px; }
+      .ia-container input:checked ~ figure {
+        left: 260px; }
+    .ia-container figcaption span {
+      font-size: 16px; } }
+
+@media screen and (max-width: 520px) {
+  .ia-container {
+    width: 320px; }
+    .ia-container figure {
+      left: 20px;
+      width: 180px; }
+    .ia-container input {
+      width: 20px; }
+      .ia-container input:checked ~ figure {
+        left: 180px; }
+    .ia-container figcaption span {
+      font-size: 12px;
+      letter-spacing: 2px;
+      padding: 10px;
+      margin-top: -20px; } }

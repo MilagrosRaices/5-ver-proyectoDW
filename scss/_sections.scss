@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Orelega+One&family=Raleway:wght@300&family=Roboto:wght@100&display=swap');
+
+$negro:black;
+$blanco: white;
+$ancho: 40px;
+$centro:100px;
+
+@mixin sizes($margen) {
+    margin-top: $margen;
+ }
+#h1 #infoNovelas{
+    @include sizes(10px,);
+}
+ 
+
+#h1{
+    padding: 10px;
+    text-align: center;
+    border: $negro;
+    color: $blanco;
+    background-color: $negro;
+    border-style: inset;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+}
+
+.footer{
+    font-size: 15px;
+    background-color: $negro;
+    color: $blanco;
+    font-family: 'Roboto' , sans-serif;  
+    .contactos{
+        padding: 20px;
+        background-color: $negro;
+        color: $blanco;
+        font-size: $ancho;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+
+#manga{
+    padding: ($centro/2);
+    background-image:url("https://c.wallhere.com/photos/99/cb/manga_anime-1879243.jpg!d");
+    color: red;
+    font-family: 'Roboto' , sans-serif;
+    text-align: center;
+    backdrop-filter: blur(3px);
+}
+
+#danmei{
+    padding: ($centro/2);
+    text-align: center;
+    color: $negro;
+    background-repeat: no-repeat;
+    background-size: cover;
+    #danmeiInfo{
+        padding: $ancho;
+        color: $blanco;
+        #infoNovelas{
+            padding: $centro;
+            border-style: dotted;
+            border-color: $negro;
+            margin-top: 10px;
+            #novelas{
+                text-decoration: underline;
+            }
+        }
+    }
+}

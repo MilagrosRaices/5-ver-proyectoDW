@@ -1,0 +1,218 @@
+.wrapper {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	transition: all 0.4s ease-out;
+}
+.wrapper__links {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 70%;
+}
+
+.social-link--linkedin {
+	color: #2d76b0;
+}
+.social-link--github {
+	color: #000;
+}
+.social-link--instagram {
+	color: #9a2970;
+}
+
+.social-link {
+	.social-svg {
+		width: 4.8rem;
+		height: 4.8rem;
+		.social-group__icon {
+			fill: #191308;
+			transition: all 0.2s;
+		}
+		.social-group__inner-circle {
+			fill: transparent;
+			transition: all 0.2s;
+		}
+		.social-group__outline {
+			stroke: #191308;
+			transform-origin: 50% 50%;
+			transition: all 0.2s;
+		}
+	}
+}
+.social-link .social-svg:hover .social-group__icon, .social-link .social-svg:active .social-group__icon, .social-link .social-svg:focus .social-group__icon {
+	fill: #fffbfa;
+	transition: all 0.45s;
+}
+.social-link .social-svg:hover .social-group__inner-circle, .social-link .social-svg:active .social-group__inner-circle, .social-link .social-svg:focus .social-group__inner-circle {
+	fill: currentColor;
+	transition: all 0.45s;
+}
+.social-link .social-svg:hover .social-group__inner-circle--instagram, .social-link .social-svg:active .social-group__inner-circle--instagram, .social-link .social-svg:focus .social-group__inner-circle--instagram {
+	fill: url(#simpleInsta) !important;
+}
+.social-link .social-svg:hover .social-group__outline, .social-link .social-svg:active .social-group__outline, .social-link .social-svg:focus .social-group__outline {
+	stroke: currentColor;
+	transform: scale(1.1);
+	transition: all 0.45s;
+}
+
+.ia-container {
+    width: 685px;
+    margin: 20px auto;
+    overflow: hidden;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08);
+    border: 7px solid rgba(255, 255, 255, 0.6);
+  
+    figure {
+      position: absolute;
+      top: 0;
+      left: 50px;
+  
+      /* width of visible piece */
+      width: 335px;
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.6);
+      transition: all 0.3s ease-in-out;
+    }
+  
+    > figure {
+      position: relative;
+      left: 0 !important;
+    }
+  
+    img {
+      display: block;
+      width: 100%;
+    }
+  
+    input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50px;
+      height: 100%;
+      cursor: pointer;
+      border: 0;
+      padding: 0;
+      opacity: 0;
+      z-index: 100;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+  
+      &:checked {
+        width: 5px;
+        left: auto;
+        right: 0px;
+  
+        ~ figure {
+          left: 335px;
+          transition: all 0.7s ease-in-out;
+        }
+      }
+    }
+  
+    figcaption {
+      width: 100%;
+      height: 100%;
+      background: rgba(87, 73, 81, 0.1);
+      position: absolute;
+      top: 0px;
+      transition: all 0.2s linear;
+  
+      span {
+        position: absolute;
+        top: 40%;
+        margin-top: -30px;
+        right: 20px;
+        left: 20px;
+        overflow: hidden;
+        text-align: center;
+        background: rgba(87, 73, 81, 0.3);
+        line-height: 20px;
+        font-size: 18px;
+        opacity: 0;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-weight: 700;
+        padding: 20px;
+        color: #fff;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+      }
+    }
+  
+    input:checked {
+      + figcaption, &:hover + figcaption {
+        background: rgba(87, 73, 81, 0);
+      }
+  
+      + figcaption span {
+        transition: all 0.4s ease-in-out 0.5s;
+        opacity: 1;
+        top: 50%;
+      }
+    }
+  
+    #ia-selector-last:checked + figcaption span {
+      transition-delay: 0.3s;
+    }
+  
+    input {
+      &:hover + figcaption {
+        background: rgba(87, 73, 81, 0.03);
+      }
+  
+      &:checked ~ figure input {
+        z-index: 1;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 720px) {
+    .ia-container {
+      width: 540px;
+  
+      figure {
+        left: 40px;
+        width: 260px;
+      }
+  
+      input {
+        width: 40px;
+  
+        &:checked ~ figure {
+          left: 260px;
+        }
+      }
+  
+      figcaption span {
+        font-size: 16px;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 520px) {
+    .ia-container {
+      width: 320px;
+  
+      figure {
+        left: 20px;
+        width: 180px;
+      }
+  
+      input {
+        width: 20px;
+  
+        &:checked ~ figure {
+          left: 180px;
+        }
+      }
+  
+      figcaption span {
+        font-size: 12px;
+        letter-spacing: 2px;
+        padding: 10px;
+        margin-top: -20px;
+      }
+    }
+  }
