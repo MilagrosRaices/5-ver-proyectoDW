@@ -39,9 +39,10 @@ $centro:100px;
     font-size: $ancho;
     font-family: 'Roboto', sans-serif;
 }
-
-
-
+#sitio{
+    text-align: center;
+    margin-top: 10px;
+}
 #manga{
     padding: ($centro/2);
     background-image:url("https://c.wallhere.com/photos/99/cb/manga_anime-1879243.jpg!d");
@@ -60,14 +61,15 @@ $centro:100px;
     #danmeiInfo{
         padding: $ancho;
         color: $blanco;
-        #infoNovelas{
-            padding: $centro;
-            border-style: dotted;
-            border-color: $negro;
-            margin-top: 10px;
-            #novelas{
-                text-decoration: underline;
-            }
-        }
     }
+}
+
+#infoNovelas{
+    padding: $centro;
+    border-style: dotted;
+    border-color: $negro;
+    margin-top: 10px;
+}
+#novelas{
+    text-decoration: underline;
 }
