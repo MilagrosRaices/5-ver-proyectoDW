@@ -87,6 +87,28 @@
 #danmei {
   background-image: url("https://pillowfortmedia.s3.amazonaws.com/posts/9d846766b7cc_04.gif"); }
 
+#novela1 {
+  background-image: url("https://img.wattpad.com/a88058771d2fdb7f69fdd85250b47bab32a21d48/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f796d6d77366473626e64306466513d3d2d3833323432303339362e313565653538303331333636383638633339313732333731333832322e6a7067");
+  background-size: cover; }
+
+#novela2 {
+  background-image: url("https://64.media.tumblr.com/89d2451087ebb0787e2e3f29740f80b5/0c9700f76b6e3c1d-66/s1280x1920/8695de88abbaf4f6ef5c6bdb41e127ad4c2ee27c.jpg");
+  background-size: cover; }
+
+#novela3 {
+  background-image: url("https://i.pinimg.com/originals/1b/ee/1d/1bee1d9565ce5c9fbe9a97aef76f09df.jpg"); }
+
+#novela4 {
+  background-image: url("https://i.pinimg.com/originals/f7/de/38/f7de38ea6724ea619cd0b5013d989f55.jpg");
+  background-size: contain; }
+
+#novela5 {
+  background-image: url("https://3.bp.blogspot.com/--VtwCqc9zt4/X6h8tdHL_eI/AAAAAAAAACU/3L-Pdoz8nu4AmYoCvEoReYbR5Qlu_qL7ACK4BGAYYCw/s1600/maxresdefault.jpg"); }
+
+#novela6 {
+  background-image: url("https://i.pinimg.com/564x/96/d2/9a/96d29a5c9085455d7f21d4162571f877.jpg");
+  background-size: cover; }
+
 .cardDisplay {
   display: flex;
   flex-wrap: wrap;
@@ -102,65 +124,49 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
-  margin-right: 15px;
-  border-radius: 8px;
+  margin-top: 15px;
+  margin-right: 18px;
+  border-radius: 10px;
   margin-left: 10px; }
 
-.wrapper {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  transition: all 0.4s ease-out; }
+/*animacion*/
+.imagen {
+  transition: width 2s; }
 
-.wrapper__links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 70%; }
+.imagen:hover {
+  width: 100px; }
 
-.social-link--linkedin {
-  color: #2d76b0; }
+.animate {
+  animation-name: animate;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+  animation-delay: 0s; }
 
-.social-link--github {
-  color: #000; }
+@keyframes animate {
+  from {
+    transform: translateX(-200px);
+    opacity: 0; }
+  to {
+    transform: translateX(0);
+    opacity: 150; } }
 
-.social-link--instagram {
-  color: #9a2970; }
+.animations {
+  animation-name: animations;
+  animation-iteration-count: 1;
+  animation-duration: 8s;
+  animation-delay: 2s; }
 
-.social-link .social-svg {
-  width: 4.8rem;
-  height: 4.8rem; }
-  .social-link .social-svg .social-group__icon {
-    fill: #191308;
-    transition: all 0.2s; }
-  .social-link .social-svg .social-group__inner-circle {
-    fill: transparent;
-    transition: all 0.2s; }
-  .social-link .social-svg .social-group__outline {
-    stroke: #191308;
-    transform-origin: 50% 50%;
-    transition: all 0.2s; }
-
-.social-link .social-svg:hover .social-group__icon, .social-link .social-svg:active .social-group__icon, .social-link .social-svg:focus .social-group__icon {
-  fill: #fffbfa;
-  transition: all 0.45s; }
-
-.social-link .social-svg:hover .social-group__inner-circle, .social-link .social-svg:active .social-group__inner-circle, .social-link .social-svg:focus .social-group__inner-circle {
-  fill: currentColor;
-  transition: all 0.45s; }
-
-.social-link .social-svg:hover .social-group__inner-circle--instagram, .social-link .social-svg:active .social-group__inner-circle--instagram, .social-link .social-svg:focus .social-group__inner-circle--instagram {
-  fill: url(#simpleInsta) !important; }
-
-.social-link .social-svg:hover .social-group__outline, .social-link .social-svg:active .social-group__outline, .social-link .social-svg:focus .social-group__outline {
-  stroke: currentColor;
-  transform: scale(1.1);
-  transition: all 0.45s; }
+@keyframes animations {
+  from {
+    transform: translateX(-300px);
+    opacity: 0; }
+  to {
+    transform: translateX(0);
+    opacity: 100; } }
 
 .ia-container {
   width: 685px;
-  margin: 20px auto;
+  margin: 18px auto;
   overflow: hidden;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08);
   border: 7px solid rgba(255, 255, 255, 0.6); }

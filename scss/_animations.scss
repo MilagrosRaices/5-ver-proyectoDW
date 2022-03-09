@@ -1,65 +1,49 @@
-.wrapper {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	transition: all 0.4s ease-out;
+/*animacion*/
+.imagen{
+  transition: width 2s;
 }
-.wrapper__links {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 70%;
+.imagen:hover{
+  width: 100px;
+}
+.animate{
+  animation-name:animate;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+  animation-delay: 0s;
+}
+@keyframes animate{
+  from{
+     transform: translateX(-200px);
+     opacity: 0; 
+  }
+  to{
+      transform: translateX(0);
+      opacity: 150;
+
+  }
 }
 
-.social-link--linkedin {
-	color: #2d76b0;
+.animations{
+  animation-name:animations;
+  animation-iteration-count: 1;
+  animation-duration: 8s;
+  animation-delay: 2s;
 }
-.social-link--github {
-	color: #000;
-}
-.social-link--instagram {
-	color: #9a2970;
-}
+@keyframes animations{
+  from{
+     transform: translateX(-300px);
+     opacity: 0; 
+  }
+  to{
+      transform: translateX(0);
+      opacity: 100;
 
-.social-link {
-	.social-svg {
-		width: 4.8rem;
-		height: 4.8rem;
-		.social-group__icon {
-			fill: #191308;
-			transition: all 0.2s;
-		}
-		.social-group__inner-circle {
-			fill: transparent;
-			transition: all 0.2s;
-		}
-		.social-group__outline {
-			stroke: #191308;
-			transform-origin: 50% 50%;
-			transition: all 0.2s;
-		}
-	}
-}
-.social-link .social-svg:hover .social-group__icon, .social-link .social-svg:active .social-group__icon, .social-link .social-svg:focus .social-group__icon {
-	fill: #fffbfa;
-	transition: all 0.45s;
-}
-.social-link .social-svg:hover .social-group__inner-circle, .social-link .social-svg:active .social-group__inner-circle, .social-link .social-svg:focus .social-group__inner-circle {
-	fill: currentColor;
-	transition: all 0.45s;
-}
-.social-link .social-svg:hover .social-group__inner-circle--instagram, .social-link .social-svg:active .social-group__inner-circle--instagram, .social-link .social-svg:focus .social-group__inner-circle--instagram {
-	fill: url(#simpleInsta) !important;
-}
-.social-link .social-svg:hover .social-group__outline, .social-link .social-svg:active .social-group__outline, .social-link .social-svg:focus .social-group__outline {
-	stroke: currentColor;
-	transform: scale(1.1);
-	transition: all 0.45s;
+  }
 }
 
 .ia-container {
     width: 685px;
-    margin: 20px auto;
+    margin: 18px auto;
     overflow: hidden;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08);
     border: 7px solid rgba(255, 255, 255, 0.6);
