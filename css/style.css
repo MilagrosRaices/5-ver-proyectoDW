@@ -109,7 +109,7 @@
   background-image: url("https://i.pinimg.com/564x/96/d2/9a/96d29a5c9085455d7f21d4162571f877.jpg");
   background-size: cover; }
 
-.cardDisplay {
+#cardDisplay {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -128,6 +128,14 @@
   margin-right: 18px;
   border-radius: 10px;
   margin-left: 10px; }
+
+.displaycomic {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 5px;
+  margin: 10px; }
 
 /*animacion*/
 .imagen {

@@ -1,4 +1,4 @@
-.cardDisplay{
+#cardDisplay{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -20,3 +20,11 @@
     margin-left: 10px;
 }
 
+.displaycomic{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+    margin: 10px;
+}
